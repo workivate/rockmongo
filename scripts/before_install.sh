@@ -19,7 +19,7 @@ server {
         location ~ \.php$ {
             include        fastcgi_params;
             auth_basic "Restricted";
-            auth_basic_user_file htpasswd;
+            auth_basic_user_file /etc/nginx/.htpasswd;
         }
 }
 '| sudo tee /etc/nginx/sites-available/rockmongo
