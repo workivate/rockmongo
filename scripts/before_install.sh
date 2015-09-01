@@ -17,6 +17,8 @@ server {
         access_log /var/log/nginx/rockmongo-access.log;
 
         location ~ \.php$ {
+	    fastcgi_pass unix:/var/run/php5-fpm.sock;
+
             include        fastcgi_params;
             auth_basic "Restricted";
             auth_basic_user_file /etc/nginx/.htpasswd;
