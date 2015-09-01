@@ -2,6 +2,8 @@
 #
 # create rockmongo nginx virtual host config file
 #
+cd /www/projects
+chown -R ubuntu:ubuntu rockmongo
 if [ ! -e /etc/nginx/sites-available/rockmongo ]; then
 echo '
 server {

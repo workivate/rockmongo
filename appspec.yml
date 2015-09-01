@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /www/projects/wa-api/current
+    destination: /www/projects/rockmongo
 overwrite: true
 hooks:
   BeforeInstall:
